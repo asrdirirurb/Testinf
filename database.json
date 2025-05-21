@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "discordId": "owner_discord_id",
+      "role": "owner",
+      "accessToken": "some_discord_access_token"
+    },
+    {
+      "discordId": "admin1_discord_id",
+      "role": "admin",
+      "accessToken": "another_discord_access_token"
+    },
+    {
+      "discordId": "customer1_discord_id",
+      "role": "customer",
+      "accessToken": "customer_discord_access_token"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod1",
+      "name": "Sample Product 1",
+      "price": 10.00,
+      "currency": "USD",
+      "image": "images/product1_image.jpg",
+      "stock": [
+        "account_detail_1_for_prod1",
+        "account_detail_2_for_prod1"
+      ],
+      "description": "This is a great product.",
+      "couponsEnabled": ["SUMMER20", "WELCOME10"],
+      "disabledCoupons": []
+    }
+  ],
+  "coupons": [
+    {
+      "code": "SUMMER20",
+      "discountType": "percentage",
+      "value": 20,
+      "isActive": true
+    },
+    {
+      "code": "WELCOME10",
+      "discountType": "fixed",
+      "value": 10,
+      "isActive": true
+    }
+  ],
+  "settings": {
+    "shopName": "Real Rewards Shop",
+    "ownerdevCredentials": {
+      "username": "your_chosen_admin_username", // This is simplistic; real auth is complex
+      "passwordHash": "a_hashed_version_of_your_password" // NEVER store plain text passwords
+    }
+  }
+}
